@@ -1,0 +1,65 @@
+###
+# MacOS files
+###
+.DS_Store
+.localized
+
+###
+# orig file
+###
+*.orig
+
+###
+# system SWAP, TMP and BACKUP files
+###
+*~
+*.swp
+*.bak
+
+###
+# Project
+###
+/.venv
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.mypy_cache/
+.ropeproject/
+*.py[cod]
+*$py.class
+
+# Django:
+*.log
+*.sqlite3
+staticfiles
+/.coverage
+/.test-results
+
+# Frontend
+/node_modules
+/dist
+
+# Redis
+dump.rdb
+
+# Local settings
+.env.local.json
+.env.docker.*.local
+
+# Celery
+celerybeat-schedule
+celerybeat-schedule.*
+
+# Logstash
+es/logstash/jdbc_last_run/*
+!es/logstash/jdbc_last_run/empty
+
+###
+# Misc
+###
+.projections.json
+/tmp
+/tags
+/test-results
+/.idea
+/.vscode
