@@ -11,8 +11,3 @@
 3. Start postgres and redis `docker-compose up`
 4. Start the web worker `make start_local_web_worker`
 5. Start the web server `make start_local_web_server`
-
-## Running
-
-```sh
-docker-compose up
