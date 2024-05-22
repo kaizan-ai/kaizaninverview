@@ -17,7 +17,8 @@ class WorkInteraction(BaseModel):
 
 
 class Entry(BaseModel):
-    work_interaction = ForeignKey(WorkInteraction, on_delete=CASCADE)
+    work_interaction = ForeignKey(WorkInteraction, related_name="entries", on_delete=CASCADE)
+    content = CharField(max_length=2000, blank=True, null=True)
 
 
 class WorkInteractionWorkStream(BaseModel):
