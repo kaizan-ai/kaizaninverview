@@ -1,0 +1,16 @@
+<form method="post" action="">
+  {% csrf_token %}
+  <div class="form-group">
+      {{ form.non_field_errors }}
+      
+      <div class="form-field">
+          <label for="{{ form.title.id_for_label }}">Title</label>
+          {{ form.title }}
+          {{ form.title.errors }}
+      </div>
+
+      <div class="form-actions">
+          <button type="submit">Save Work Interaction</button>
+      </div>
+  </div>
+</form>
